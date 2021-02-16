@@ -1,0 +1,36 @@
+<ion-content [fullscreen]="true" color="fulldark">
+  <ion-list lines="none" class="ion-margin">
+    <ion-list-header>
+      <ion-label color="light" class="ion-text-center">LOGO</ion-label>
+    </ion-list-header>
+    <ion-item color="dark" class="ion-margin-vertical">
+      <ion-icon name="mail-outline" slot="start" color="white"></ion-icon>
+      <ion-input placeholder="Enter Email" type="text"></ion-input>
+    </ion-item>
+    <ion-item color="dark" class="ion-margin-vertical">
+      <ion-icon name="lock-closed-outline" slot="start" color="white"></ion-icon>
+      <ion-input placeholder="Enter Password" type="password"></ion-input>
+    </ion-item>
+    <ion-row class="ion-margin-bottom">
+      <ion-col size="6" class="alignItems">
+        <ion-icon *ngIf="staySignedIn" name="checkmark-circle-outline" color="success" (click)="changeStatus(false)"></ion-icon>
+        <ion-icon *ngIf="!staySignedIn" name="close-circle-outline" color="danger" (click)="changeStatus(true)"></ion-icon>
+        <ion-note>Keep me signed in</ion-note>
+      </ion-col>
+    </ion-row>
+    <ion-button color="success" expand="block" size="large">LOGIN</ion-button>
+    <ion-text class="ion-text-center">
+      <p>
+        <ion-note>Forgot Password? </ion-note>
+        <ion-text color="success">Recover here</ion-text>
+      </p>
+    </ion-text>
+  </ion-list>
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar color="fulldark" class="ion-text-center">
+    <ion-note>Don't have an account? </ion-note>
+    <ion-text color="success">Signup here</ion-text>
+  </ion-toolbar>
+</ion-footer>

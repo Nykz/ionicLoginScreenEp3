@@ -1,0 +1,34 @@
+<ion-content [fullscreen]="true">
+  <ion-list lines="full" class="ion-margin">
+    <ion-list-header>
+      <ion-label color="fulldark" class="ion-text-center">LOGO</ion-label>
+    </ion-list-header>
+    <ion-item class="ion-margin-vertical">
+      <ion-icon name="mail-outline" slot="start" color="medium"></ion-icon>
+      <ion-input placeholder="Enter Email" type="text"></ion-input>
+    </ion-item>
+    <ion-item class="ion-margin-vertical">
+      <ion-icon name="lock-closed-outline" slot="start" color="medium"></ion-icon>
+      <ion-input placeholder="Enter Password" type="password"></ion-input>
+    </ion-item>
+    <ion-row class="ion-margin-bottom">
+      <ion-col size="6" class="alignItems">
+        <div align="left">
+          <ion-icon *ngIf="staySignedIn" name="checkmark-circle-outline" color="success" (click)="changeStatus(false)"></ion-icon>
+          <ion-icon *ngIf="!staySignedIn" name="close-circle-outline" color="danger" (click)="changeStatus(true)"></ion-icon>
+          <ion-note>Remember me</ion-note>
+        </div>
+      </ion-col>
+      <ion-col size="6" class="alignItems">
+        <div align="right"><ion-note color="success">Forgot Password?</ion-note></div>
+      </ion-col>
+    </ion-row>
+    <ion-button color="success" expand="block" size="large">LOGIN</ion-button>
+    <ion-text class="ion-text-center">
+      <p>
+        <ion-note>Don't have an account? </ion-note>
+    <ion-text color="success">Signup here</ion-text>
+      </p>
+    </ion-text>
+  </ion-list>
+</ion-content>
