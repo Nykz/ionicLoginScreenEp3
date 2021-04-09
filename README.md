@@ -1,4 +1,10 @@
 # ionicLoginScreenEp3
+Business | Finance App - Auth Screen UI Kit
+
+Watch the Full Episode on YouTube at https://www.youtube.com/watch?v=bBEh7ATyDLQ&list=PLixvNT19uDK6Fk6glTj18ONQRpCAVnY0G&index=7&ab_channel=CodingTechnyks
+
+<img src="https://github.com/Nykz/ionicLoginScreenEp3/blob/main/screen3_1.png" width="200" height="400" />
+<img src="https://github.com/Nykz/ionicLoginScreenEp3/blob/main/screen3_2.png" width="200" height="400" />
 
 Steps to Setup this beautiful login screen in your system
 
